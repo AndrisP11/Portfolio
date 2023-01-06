@@ -16,11 +16,11 @@ export async function getServerSideProps() {
 
         const username = 'AndrisP11';
         const ymlFilename = 'portfolio.yml'
-        const dataName = await fetchNameData(username, apiKey);
+        const dataName = await fetchNameData(username);
 
-        const repo = await fetchAllUserRepos(username, apiKey)
+        const repo = await fetchAllUserRepos(username)
 
-        const ymlFirstData = await fetchYmlDataForRepos(username, repo, ymlFilename, apiKey);
+        const ymlFirstData = await fetchYmlDataForRepos(username, repo, ymlFilename);
 
         return {
             props: {
