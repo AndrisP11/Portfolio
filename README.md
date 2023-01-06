@@ -27,8 +27,11 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 ## Uses
 
 React 
+
 Antd design library
+
 marked
+
 js-yaml
 
 integration/github.ts contains most fetch requests to gitHub API user info to be used in project.
